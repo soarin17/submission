@@ -14,4 +14,4 @@ function Multiplication(number1, number2){
     };
     console.log(number1*number2)
 };
-Multiplication(2,4)
+Multiplication(2,4);
