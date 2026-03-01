@@ -11,3 +11,6 @@ numbers.sort(function (a,b) {
     return b - a;
 })
 console.log(numbers)
+
+const newnumber = numbers.map(num => num*2)
+console.log(newnumber);
