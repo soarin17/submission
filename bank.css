@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Georgia, 'Times New Roman', serif;
+  background: #e5e5e5;
+  align-items: center;
+  height: 50%;
+}
+.app {
+  text-align: center;
+}
+h1 {
+  margin-bottom: 30px;
+}
+.input-group {
+  margin-bottom: 25px;
+}
+.input-group label {
+  margin-right: 10px;
+  font-size: 18px;
+}
+.input-group input {
+  padding: 6px;
+  width: 180px;
+  border: 2px solid #333;
+  border-radius: 5px;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin: 20px 0;
+}
+button {
+  padding: 10px 25px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  background-color: #3c4043;
+  color: white;
+}
+button:hover {
+  background-color: #2a2d2f;
+}
+.balance {
+  margin-top: 25px;
+  font-size: 18px;
+}
