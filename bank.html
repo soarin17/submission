@@ -6,22 +6,20 @@
   <link rel="stylesheet" href="bank.css">
 </head>
 <body>
-
   <div class="app">
     <h1>Bank App</h1>
-
     <div class="input-group">
       <label>Enter Transaction Amount</label>
-      <input type="number">
+      <input type="number" id="amount">
     </div>
-
     <div class="buttons">
-      <button class="credit">Credit</button>
-      <button class="debit">Debit</button>
+      <button class="credit" onclick="creditAmount()">Credit</button>
+      <button class="debit" onclick="debitAmount()">Debit</button>
     </div>
-
-    <p class="balance">Your Account Balance is : Rs.0</p>
+    <p class="balance">
+      Your Account Balance is : Rs.<span id="balance">0</span>
+    </p>
   </div>
-
+  <script src="bank.js"></script>
 </body>
 </html>
