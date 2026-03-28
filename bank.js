@@ -1,16 +1,15 @@
 let balance = 0;
 
 function getAmount() {
-  const input = document.getElementById("amount");
-  const value = parseFloat(input.value);
+  let value = document.getElementById("amount").value;
 
-  if (isNaN(value) || value <= 0) {
-    alert("Please enter a valid amount");
+  if (value > 0) {
+    document.getElementById("amount").value = "";
+    return Number(value);
+  } else {
+    alert("Enter a value greater than 0");
     return null;
   }
-
-  input.value = ""; // clear input
-  return value;
 }
 
 function updateBalance() {
@@ -28,6 +27,11 @@ function creditAmount() {
 function debitAmount() {
   const amount = getAmount();
   if (amount === null) return;
+
+  if (amount > balance) {
+    alert("too broke");
+    return;
+  }
 
   balance -= amount;
   updateBalance();
